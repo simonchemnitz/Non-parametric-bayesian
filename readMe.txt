@@ -15,17 +15,35 @@ The following julia packages are assumed installed and working:
 	-Statistics, 
 	-Distributions,
 	-DelimitedFiles, 
-	-Plots, 
 	-LaTeXStrings,
 	-NBInclude, 
 	-LinearAlgebra, 
 	-SparseArrays
 
-A data file butane_data.txt is expected in the same folder as main,
-as are the other notebooks.
+packages can be installed by:
 
+using Pkg
+
+Pkg.add("BayesianNonparametricStatistics")
+Pkg.add("Plots")
+Pkg.add("Statistics")
+Pkg.add("Distributions")
+Pkg.add("DelimitedFiles") 
+Pkg.add("LaTeXStrings")
+Pkg.add("NBInclude")
+Pkg.add("LinearAlgebra")
+Pkg.add("SparseArrays")
+
+
+
+All notebooks and the datafile "butane_data.txt" 
+are expected to be in the same folder.
+
+In addition there should be a folder named figures, 
+in case julia does not create one when saving plots.
 
 Run main.ipynb to reproduce all figures.
+
 
 
 Last stable versions
