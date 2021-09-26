@@ -93,7 +93,7 @@ xlabel!("\$X_t(rad)\$")
 ylabel!("\$b(X_t)\$")
 
 ##   Add Credible Bands
-@nbinclude("Credible_Bands.ipynb")
+include("Credible_Bands.jl")
 
 #number of posterior drawings
 M = 200
@@ -125,7 +125,7 @@ ylabel!("\$b(X_t)\$")
 l = @layout [a ; b c]
 full_bayes_plot = plot(path_plot, hist_plot, cred_plot, layout = l, size = (800,600))
 
-@nbinclude("MCMC.ipynb")
+include("MCMC.jl")
 
 N_step = 5000
 burn = 1000

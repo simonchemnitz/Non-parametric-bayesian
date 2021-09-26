@@ -134,7 +134,7 @@ xlabel!("\$x\$")
 l = @layout [a ; b c]
 full_bayes_plot = plot(path_plot,sample_plot, bayes_post , layout = l, size = (800,600),margin=5Plots.mm)
 
-@nbinclude("MCMC.ipynb")
+include("MCMC.jl")
 
 #Number of iterations to make
 N_step = 5000
